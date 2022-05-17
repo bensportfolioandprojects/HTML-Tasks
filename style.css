@@ -1,4 +1,15 @@
 h1 {
-    color: navy;
-    margin-left: 20px;
+    display:none;
+}
+li {
+    display:inline
+}
+strong {
+    display:block
+}
+img {
+
+    position:fixed;
+    bottom: 0;
+    right: 0;
 }
