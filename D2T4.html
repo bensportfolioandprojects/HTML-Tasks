@@ -3,16 +3,15 @@
 <head>
     <title>L3_CSS_Combinators _Demo</title>
     <style>
-        #em1 {
+        em {
             color:blue;
-
         }
-        header h1 {color: red;}
-        article > h1 {color: limegreen;}
-        h2 + p {color: purple;}
-        body ~ p {color: grey;}
+        p em{color: red;}
+        body>footer {color: limegreen;}
+        h1 + p {color: purple;}
+        h1 ~ p {color: grey;}
 
-        button:hover {
+        p.hover:hover {
             color: aqua;
         }
 
@@ -20,7 +19,7 @@
 </head>
 <body>
         <h1 id="heading" class="font"> A <em>heading</em></h1>
-        <p class="font">A paragraph <em id="em1">with emphasis</em></p>
+        <p class="font">A paragraph <em>with emphasis</em></p>
     <header>
         <h1>Header</h1>
     </header>
@@ -36,7 +35,7 @@
            Body footer
         </footer>
 
-    <p class="hover" id:"button">hover me</p>
+    <p class="hover">hover me</p>
 
     <article>
         <h1>Article</h1>

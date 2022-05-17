@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS part of the bootstrap library -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Forms take user input-->
+    <!-- Two main attributes - method(how to send the data) and action (where to send the data) -->
+    <form method="get" action="search.html">
+        <h4> 
+            Get form 
+        </h4>
+        Please enter your name:
+        <input type="text" value="wang dang" name="UserName"/>
+        <button type="submit" name="submitbutton" value="submit">
+            Submit
+        </button>
+    </form>
+
+    <!-- Post Method -->
+    <!-- Sends the data to the action URL -->
+    <form method="post" action="./mailform.php">
+        <h4>post form</h4>
+        <!-- input for text -->
+        <input name="message" type="text"/>
+        <!-- a button to submit the form -->
+        <button>Send</button>
+    </form>
+
+    <!-- more inputs -->
+    <form>
+        <!-- checkboxes -->
+        <input type="checkbox" name="checkbox1" value="1"/>1
+        <input type="checkbox" name="checkbox2" value="2"/>2
+
+        <!-- radio buttons -->
+        <fieldset>
+            <legend>Question 1:</legend>
+            <input type="radio" name="choice" value="a"/>a
+            <input type="radio" name="choice" value="b"/>b
+            <input type="radio" name="choice" value="c"/>c
+            <input type="radio" name="choice" value="d"/>d
+        </fieldset>
+
+        <!-- date input -->
+        <input type="date" name="dob"/>
+
+        <!--  colour -->
+        <input type="colour" name="colour"/>
+
+    </form>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+</body>
+</html>
