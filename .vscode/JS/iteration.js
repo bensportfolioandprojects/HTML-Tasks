@@ -31,20 +31,16 @@ do {
 } while (canIRun);
 
 // Task 1
-let a = 100;
-while(a <= 200) {
-    a++;
+for (let a = 100; a <= 200; a++) {
     console.log(`a = ${a}`);
 }
 // Task 2
-let A = 100;
-while (A <= 200) {
+for (let A = 100; A <= 200; A++) {
     if (A% 2 == 0) {
         console.log("-");
     } else {
         console.log("*");
     }
-    a++;
 }
 // Task 3
 for (let b = 0; b < 10; i++) {
@@ -53,5 +49,36 @@ for (let b = 0; b < 10; i++) {
     }
 }
 // Task 4
-
+Above
 // Task 5
+let today = new Date(); 
+let day = today.getDay();
+switch (day) {
+    case 0:
+    console.log(`Monday`);
+    break;
+    case 6:
+    console.log(`Sunday`);
+    break;
+    case 1:
+    console.log(`Tuesday`);
+    break;
+    case 5:
+    console.log(`Saturday`);
+    break;
+    case 2:
+        console.log(`Wednesday`);
+    break;
+    case 3:
+        console.log(`Thursday`);
+    break;
+    case 4:
+        console.log(`Friday`);
+    break;
+    case 5:
+        console.log(`Saturday`);
+    break;
+  default:
+    console.log(`What?`);
+    break;
+}
