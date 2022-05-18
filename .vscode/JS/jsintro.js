@@ -1,3 +1,5 @@
+'use strict';
+
 console.log("Hello world")
 
 myNumber = 5;
@@ -22,21 +24,44 @@ console.log(`my fav dog is ${myDog} and the breed is ${myBreed}`);
 
 console.log("Scrubadub %c dubdubdubdub.","color: orange;font-family:fantasy; font-style: Bold; background-color: black;padding: 10px");
 
-let myNullValue = null;
-console.log(myNullValue);
-console.log(typeof myNullValue);
+// let myNullValue = null;
+// console.log(myNullValue);
+// console.log(typeof myNullValue);
 
-// This is currently undefined
-let myUndefinedValue;
-console.log(typeof myUndefinedValue);
-console.log(myUndefinedValue);
+// // This is currently undefined
+// let myUndefinedValue;
+// console.log(typeof myUndefinedValue);
+// console.log(myUndefinedValue);
 
-// In JS == only checks value
-console.log(myNullValue == undefined);
-// comes back true
+// // In JS == only checks value
+// console.log(myNullValue == undefined);
+// // comes back true
 
-// === checks type AND value
-console.log(myNullValue === undefined);
-// comes back false
+// // === checks type AND value
+// console.log(myNullValue === undefined);
+// // comes back false
 
-let person ="John";
+let a;
+let b = "12345";
+let c = 12344;
+let d = true;
+let e = {a:"javaScript"};
+
+typeof (a);
+typeof (b);
+typeof (c);
+typeof (d);
+typeof (e);
+
+let totalMoney = 4000;
+let moneyPaidSoFar = 2348;
+let totalLeftToPay = totalMoney - moneyPaidSoFar;
+
+console.log(`The total bill is £ ${totalMoney} the remaining amount of money to be paid is £${totalLeftToPay}`);
+
+
+function sayHello() {
+    return {
+      "Someone says hello";
+    }
+  }
